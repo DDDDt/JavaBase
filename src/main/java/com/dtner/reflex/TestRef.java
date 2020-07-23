@@ -1,6 +1,6 @@
-package com.dtner.ref;
+package com.dtner.reflex;
 
-import com.dtner.ref.domain.RefDoamin;
+import com.dtner.reflex.domain.RefDoamin;
 
 import java.lang.reflect.*;
 

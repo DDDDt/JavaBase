@@ -1,4 +1,4 @@
-package com.dtner.ref.domain;
+package com.dtner.reflex.domain;
 
 /**
  * @ClassName RefDoamin
