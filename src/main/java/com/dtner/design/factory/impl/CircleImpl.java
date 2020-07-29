@@ -9,6 +9,7 @@ import com.dtner.design.factory.iter.ShapIter;
  * @Date 2020-07-24
  **/
 public class CircleImpl implements ShapIter {
+
     public void draw() {
         System.out.println("圆形");
     }
