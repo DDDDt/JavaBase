@@ -16,6 +16,6 @@ public class ComputerImpl implements ComputerPartIter {
         for (ComputerPartIter part : parts) {
             part.accept(computerPartVisitorIter);
         }
-        computerPartVisitorIter.visit();
+        computerPartVisitorIter.visit(this);
     }
 }
