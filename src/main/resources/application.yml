@@ -1,0 +1,11 @@
+# yaml
+hello: world
+
+# redis name
+redis:
+  name:
+          - d1
+          - d2
+          - d3
+          - d4
+          - d5
