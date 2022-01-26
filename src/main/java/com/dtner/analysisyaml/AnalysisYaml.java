@@ -22,9 +22,10 @@ public class AnalysisYaml {
         Map map = yaml.loadAs(resourceAsStream, Map.class);
 
         map.forEach((k,v) -> {
+            System.out.println("------开始------");
             System.out.println(k);
             System.out.println(v);
-            System.out.println("------");
+            System.out.println("------结束------");
         });
 
     }
