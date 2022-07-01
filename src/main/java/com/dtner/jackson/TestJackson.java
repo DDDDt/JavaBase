@@ -2,6 +2,7 @@ package com.dtner.jackson;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -18,6 +19,8 @@ public class TestJackson {
 
         String jsonString = "{\"name\":\"dt\",\"age\":18,\"list\":[{\"name\":\"dt1\",\"age\":19},{\"name\":\"dt2\",\"age\":20}]}";
         ObjectMapper objectMapper = new ObjectMapper();
+        // 字段不存在时，反序列化不会报错
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         JsonNode jsonNode = objectMapper.readTree(jsonString);
         System.out.println(jsonNode.get("age").asText());
         System.out.println(jsonNode.size());
