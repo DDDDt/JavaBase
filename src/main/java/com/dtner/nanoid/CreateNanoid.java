@@ -1,5 +1,6 @@
 package com.dtner.nanoid;
 
+import cn.hutool.core.date.DateTime;
 import cn.hutool.core.lang.id.NanoId;
 
 /**
